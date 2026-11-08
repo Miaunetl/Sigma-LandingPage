@@ -6,12 +6,10 @@
     --blanco: #FFFFFF;
     --gris-oscuro: #1F2937;
     --gris-medio: #9CA3AF;
-
     /* Tonos complementarios para las tarjetas alternadas */
     --verde-claro: #DFF7F1;
     --verde-icono: #B8EAE0;
 }
-
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -45,13 +43,11 @@ header button {
     padding: 10px 20px;
     cursor: pointer;
 }
-
 .hero {
     background-color: var(--celeste-claro);
     padding: 80px 60px;
     min-height: 300px;
 }
-
 .hero-contenido {
     max-width: 500px;
 }
