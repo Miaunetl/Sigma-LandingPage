@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIGMA - Comunicación inclusiva</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    </head>
+    <body>
+        <!-- ENCABEZADO Y NAVEGACIÓN -->
+        <header>
+            <div class="logo">
+                <img src="images/logo-sigma.png" alt="Logo de SIGMA">
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#funcionamiento">¿Cómo funciona?</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#nosotros">Nosotros</a>
+            </nav>
+            <button type="button" onclick="abrirLogin()">Iniciar sesión</button>
+        </header>
+        <main>
+            <!-- SECCIÓN PRINCIPAL -->
+            <section id="inicio" class="hero">
+                <div class="hero-contenido">
+                    <h1>
+                        Comunicación<br>
+                        <span>sin barreras</span>
+                    </h1>
+                    <p>Sigma facilita la comunicación entre personas con discapacidad auditiva y personas que no conocen la lengua de señas.</p>
+                    <button type="button" class="boton-probar" onclick="mostrarDemo()">Probar Sigma</button>
+                </div>
+                <div class="hero-imagen">
+                    <img src="images/celular-sigma.png" alt="Aplicación SIGMA en un celular">
+                </div>
+            </section>
+            <!-- CÓMO FUNCIONA -->
+            <section id="funcionamiento" class="funcionamiento">
+                <h2>¿Cómo funciona?</h2>
+                <div class="pasos">
+                    <article class="paso">
+                        <span class="numero">01</span>
+                        <div class="icono-paso">
+                            <i data-lucide="camera"></i>
+                        </div>
+                        <h3>Activa tu cámara</h3>
+                        <p>Sigma utiliza la cámara de tu computadora para captar señas.</p>
+                    </article>
+                    <article class="paso">
+                        <span class="numero">02</span>
+                        <div class="icono-paso">
+                            <i data-lucide="message-square-text"></i>
+                        </div>
+                        <h3>Convierte a texto</h3>
+                        <p>Sigma reconoce las señas y las convierte en texto en pantalla.</p>
+                    </article>
+                    <article class="paso">
+                        <span class="numero">03</span>
+                        <div class="icono-paso">
+                            <i data-lucide="message-square"></i>
+                        </div>
+                        <h3>Comunícate</h3>
+                        <p>La otra persona puede leer el mensaje y responder fácilmente.</p>
+                    </article>
+                </div>
+            </section>
+            <!-- BENEFICIOS -->
+            <section id="beneficios" class="beneficios">
+                <h2>Beneficios</h2>
+                <p class="beneficios-subtitulo">Una herramienta pensada para una comunicación más inclusiva</p>
+                <div class="lista-beneficios">
+                    <article class="beneficio">
+                        <div class="beneficio-icono">
+                            <i data-lucide="accessibility"></i>
+                        </div>
+                        <h3>Comunicación accesible</h3>
+                        <p>Facilita la comunicación entre personas sordas y oyentes.</p>
+                    </article>
+                    <article class="beneficio">
+                        <div class="beneficio-icono">
+                            <i data-lucide="user-round"></i>
+                        </div>
+                        <h3>Mayor autonomía</h3>
+                        <p>Permite comunicarse de manera más independiente y sencilla.</p>
+                    </article>
+                    <article class="beneficio">
+                        <div class="beneficio-icono">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3>Interfaz sencilla</h3>
+                        <p>Un diseño intuitivo, claro y fácil de utilizar.</p>
+                    </article>
+                    <article class="beneficio">
+                        <div class="beneficio-icono">
+                            <i data-lucide="messages-square"></i>
+                        </div>
+                        <h3>Comunicación bidireccional</h3>
+                        <p>Permite que ambas personas puedan comunicarse y responder.</p>
+                    </article>
+                </div>
+            </section>
+            <!-- TESTIMONIOS (CONTENIDO DE EJEMPLO) -->
+            <section id="testimonios" class="testimonios">
+                <h2>Lo que dicen nuestros usuarios</h2>
+                <p class="testimonios-subtitulo">Historias de usuarios que ya usan Sigma</p>
+                <div class="lista-testimonios">
+                    <article class="testimonio">
+                        <div class="testimonio-icono">
+                            <i data-lucide="user-round"></i>
+                        </div>
+                        <div>
+                            <p>"La escritura en la página hace que la comunicación sea más lenta"</p>
+                            <h3>María Fernández</h3>
+                        </div>
+                    </article>
+                    <article class="testimonio">
+                        <div class="testimonio-icono">
+                            <i data-lucide="user-round"></i>
+                        </div>
+                        <div>
+                            <p>"Sería útil contar con una herramienta que traduzca en tiempo real"</p>
+                            <h3>Carlos Rojas</h3>
+                        </div>
+                    </article>
+                    <article class="testimonio">
+                        <div class="testimonio-icono">
+                            <i data-lucide="user-round"></i>
+                        </div>
+                        <div>
+                            <p>"Una herramienta tecnológica podría facilitar la atención en espacios públicos"</p>
+                            <h3>Lucía Torres</h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="nosotros" class="nosotros">
+
+    <div class="nosotros-portada">
+
+        <div class="nosotros-mision">
+            <h2>MISIÓN</h2>
+            <p>
+                Queremos ser una herramienta tecnológica que elimine
+                las barreras de comunicación entre personas con
+                discapacidad auditiva y personas que no conocen
+                la lengua de señas.
+            </p>
+        </div>
+
+        <div class="nosotros-imagen">
+          <img src="images/manos-sigma.png"
+     alt="Manos comunicándose mediante lengua de señas">
+        </div>
+
+        <div class="nosotros-mensaje">
+            <h3>Comunicación sin barreras, inclusión sin límites.</h3>
+            <a href="#contacto" class="boton-nosotros">
+                Conocer más
+            </a>
+        </div>
+
+    </div>
+
+    <div class="nosotros-tarjetas">
+
+        <article class="nosotros-tarjeta">
+            <i data-lucide="users"></i>
+            <h3>NUESTRO EQUIPO</h3>
+            <p>Personas comprometidas con un futuro más accesible.</p>
+        </article>
+
+        <article class="nosotros-tarjeta">
+            <i data-lucide="lightbulb"></i>
+            <h3>NUESTRA VISIÓN</h3>
+            <p>Empatía, inclusión, innovación y compromiso social.</p>
+        </article>
+
+        <article class="nosotros-tarjeta">
+            <i data-lucide="heart"></i>
+            <h3>NUESTROS VALORES</h3>
+            <p>Ser un referente en tecnología inclusiva y accesible.</p>
+        </article>
+
+    </div>
+
+    <div id="contacto" class="contacto-nosotros">
+
+        <div class="contacto-informacion">
+
+            <h2>Estamos aquí <span>para ayudarte</span></h2>
+
+            <div class="contacto-dato">
+                <i data-lucide="mail"></i>
+                <div>
+                    <h3>Correo Electrónico</h3>
+                    <p>contacto@sigma.pe</p>
+                </div>
+            </div>
+
+            <div class="contacto-dato">
+                <i data-lucide="phone"></i>
+                <div>
+                    <h3>Teléfono</h3>
+                    <p>+51 999 999 999</p>
+                </div>
+            </div>
+
+            <div class="contacto-dato">
+                <i data-lucide="map-pin"></i>
+                <div>
+                    <h3>Ubicación</h3>
+                    <p>Lima, Perú</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contacto-formulario">
+
+            <form id="form-contacto">
+
+                <h3>Envíanos un mensaje</h3>
+
+                <input type="text" name="nombre"
+                    placeholder="Nombre" required>
+
+                <input type="email" name="correo"
+                    placeholder="Correo Electrónico" required>
+
+                <textarea name="mensaje"
+                    placeholder="Mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+                <p id="contacto-estado"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+        </main>
+        <!-- PIE DE PÁGINA -->
+        <footer class="footer">
+            <div class="footer-contenido">
+                <div class="footer-logo">
+                    <img src="images/logo-sigma-blanco.png" alt="Logo blanco de SIGMA">
+                </div>
+                <nav class="footer-navegacion">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#funcionamiento">¿Cómo funciona?</a>
+                    <a href="#beneficios">Beneficios</a>
+                    <a href="#nosotros">Nosotros</a>
+                </nav>
+                <div class="footer-contacto">
+                    <h3>Contáctanos</h3>
+                    <p>
+                        <i data-lucide="phone"></i>
+                        Teléfono próximamente
+                    </p>
+                    <p>
+                        <i data-lucide="instagram"></i>
+                        Instagram de SIGMA
+                    </p>
+                    <p>
+                        <i data-lucide="facebook"></i>
+                        Facebook de SIGMA
+                    </p>
+                </div>
+            </div>
+            <div class="footer-inferior">
+                <p>© 2026 SIGMA. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        <!-- VENTANA DE INICIO DE SESIÓN -->
+        <!-- HU02: INICIO DE SESIÓN -->
+        <div id="modal-login" class="modal-login" hidden>
+            <div class="login-contenido" role="dialog" aria-modal="true" aria-labelledby="login-titulo">
+                <button type="button" class="cerrar-login" onclick="cerrarLogin()" aria-label="Cerrar ventana">×</button>
+                <h2 id="login-titulo">Iniciar sesión</h2>
+                <p>Bienvenido a SIGMA</p>
+                <form id="form-login">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" placeholder="Ingresa tu correo" autocomplete="email" required>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" placeholder="Ingresa tu contraseña" autocomplete="current-password" required>
+                    <button type="submit" class="boton-ingresar">Ingresar</button>
+                </form>
+                <p class="login-enlace">
+                    <button type="button" class="enlace-texto" onclick="abrirRecuperacion()">¿Olvidaste tu contraseña?</button>
+                </p>
+                <p class="login-enlace">
+                    ¿No tienes cuenta?
+                    <button type="button" class="enlace-texto" onclick="abrirRegistro()">Regístrate</button>
+                </p>
+                <p class="login-aviso">Esto es una demostración visual: el inicio de sesión todavía no está conectado a un sistema de autenticación.</p>
+            </div>
+        </div>
+        <!-- VENTANA DE REGISTRO -->
+        <!-- HU01: REGISTRO -->
+        <div id="modal-registro" class="modal-login" hidden>
+            <div class="login-contenido" role="dialog" aria-modal="true" aria-labelledby="registro-titulo">
+                <button type="button" class="cerrar-login" onclick="cerrarRegistro()" aria-label="Cerrar registro">×</button>
+                <h2 id="registro-titulo">Crear una cuenta</h2>
+                <p>Bienvenido a la comunidad SIGMA</p>
+                <form id="form-registro">
+                    <label for="registro-nombre">Nombre completo</label>
+                    <input type="text" id="registro-nombre" placeholder="Ingresa tu nombre" autocomplete="name" required>
+                    <label for="registro-correo">Correo electrónico</label>
+                    <input type="email" id="registro-correo" placeholder="Ingresa tu correo" autocomplete="email" required>
+                    <label for="registro-contrasena">Contraseña</label>
+                    <input type="password" id="registro-contrasena" placeholder="Crea una contraseña" autocomplete="new-password" minlength="8" required>
+                    <button type="submit" class="boton-ingresar">Registrarse</button>
+                </form>
+                <p class="login-enlace">
+                    ¿Ya tienes cuenta?
+                    <button type="button" class="enlace-texto" onclick="volverLogin()">Inicia sesión</button>
+                </p>
+                <p class="login-aviso">Esta es una demostración. No se crearán cuentas reales.</p>
+            </div>
+        </div>
+        <!-- VENTANA DE RECUPERACIÓN DE CONTRASEÑA -->
+        <!-- HU03: RECUPERACIÓN DE CONTRASEÑA -->
+        <div id="modal-recuperacion" class="modal-login" hidden>
+            <div class="login-contenido" role="dialog" aria-modal="true" aria-labelledby="recuperacion-titulo">
+                <button type="button" class="cerrar-login" onclick="cerrarRecuperacion()" aria-label="Cerrar recuperación">×</button>
+                <h2 id="recuperacion-titulo">Recuperar contraseña</h2>
+                <p>Ingresa tu correo electrónico para solicitar la recuperación de tu cuenta.</p>
+                <form id="form-recuperacion">
+                    <label for="recuperacion-correo">Correo electrónico</label>
+                    <input type="email" id="recuperacion-correo" placeholder="Ingresa tu correo" autocomplete="email" required>
+                    <button type="submit" class="boton-ingresar">Recuperar contraseña</button>
+                </form>
+                <p class="login-enlace">
+                    <button type="button" class="enlace-texto" onclick="volverDesdeRecuperacion()">Volver a iniciar sesión</button>
+                </p>
+                <p class="login-aviso">Demostración: no se enviarán correos de recuperación reales.</p>
+            </div>
+        </div>
+        <script>
+            lucide.createIcons();
+
+            // Botón principal: demostración informativa
+            function mostrarDemo() {
+                alert(
+                    "¡Bienvenido a SIGMA!\n\n" +
+                    "Esta es una demostración informativa.\n\n" +
+                    "SIGMA está diseñado para captar señas mediante " +
+                    "una cámara y convertirlas en texto, " +
+                    "facilitando la comunicación inclusiva.\n\n" +
+                    "La función de traducción se encuentra " +
+                    "en desarrollo."
+                );
+            }
+
+            // HU02: inicio de sesión (simulación)
+            function abrirLogin() {
+                document.getElementById("modal-login").hidden = false;
+                document.getElementById("correo").focus();
+            }
+
+            function cerrarLogin() {
+                document.getElementById("modal-login").hidden = true;
+            }
+
+            document.getElementById("form-login").addEventListener("submit", function(evento) {
+                evento.preventDefault();
+                alert(
+                    "Esta es una demostración de SIGMA.\n" +
+                    "La autenticación de usuarios " +
+                    "todavía no está implementada."
+                );
+            });
+
+            // HU01: registro (simulación)
+            function abrirRegistro() {
+                cerrarLogin();
+                document.getElementById("modal-registro").hidden = false;
+                document.getElementById("registro-nombre").focus();
+            }
+
+            function cerrarRegistro() {
+                document.getElementById("modal-registro").hidden = true;
+            }
+
+            function volverLogin() {
+                cerrarRegistro();
+                abrirLogin();
+            }
+
+            document.getElementById("form-registro").addEventListener("submit", function(evento) {
+                evento.preventDefault();
+                alert(
+                    "¡Bienvenido a SIGMA!\n\n" +
+                    "El formulario se completó correctamente.\n" +
+                    "Esta es una simulación: no se creó " +
+                    "ninguna cuenta real."
+                );
+            });
+
+            // HU03: recuperación de contraseña (simulación)
+            function abrirRecuperacion() {
+                cerrarLogin();
+                document.getElementById("modal-recuperacion").hidden = false;
+                document.getElementById("recuperacion-correo").focus();
+            }
+
+            function cerrarRecuperacion() {
+                document.getElementById("modal-recuperacion").hidden = true;
+            }
+
+            function volverDesdeRecuperacion() {
+                cerrarRecuperacion();
+                abrirLogin();
+            }
+
+            document.getElementById("form-recuperacion").addEventListener("submit", function(evento) {
+                evento.preventDefault();
+                alert(
+                    "Solicitud de recuperación simulada.\n\n" +
+                    "En una versión funcional de SIGMA, " +
+                    "se procesaría la solicitud para recuperar " +
+                    "el acceso a la cuenta.\n\n" +
+                    "No se ha enviado ningún correo real."
+                );
+            });
+            // =====================================
+// FORMULARIO DE CONTACTO SIGMA
+// =====================================
+
+const formularioContactoSigma = document.getElementById("form-contacto");
+
+if (formularioContactoSigma) {
+
+    formularioContactoSigma.addEventListener("submit", function(evento) {
+
+        evento.preventDefault();
+
+        const estadoContactoSigma = document.getElementById("contacto-estado");
+
+        estadoContactoSigma.textContent =
+            "¡Gracias por comunicarte con SIGMA! Tu mensaje ha sido registrado.";
+
+        this.reset();
+
+    });
+
+}
+        </script>
+    </body>
+</html>
