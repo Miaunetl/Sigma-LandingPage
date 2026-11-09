@@ -6,15 +6,18 @@
     --blanco: #FFFFFF;
     --gris-oscuro: #1F2937;
     --gris-medio: #9CA3AF;
+
     /* Tonos complementarios para las tarjetas alternadas */
     --verde-claro: #DFF7F1;
     --verde-icono: #B8EAE0;
 }
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: white;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -22,14 +25,17 @@ header {
     padding: 15px 40px;
     background-color: white;
 }
+
 .logo h2 {
     color: var(--azul-principal);
     margin: 0;
 }
+
 nav {
     display: flex;
     gap: 25px;
 }
+
 nav a {
     text-decoration: none;
     color: var(--gris-oscuro);
@@ -43,11 +49,13 @@ header button {
     padding: 10px 20px;
     cursor: pointer;
 }
+
 .hero {
     background-color: var(--celeste-claro);
     padding: 80px 60px;
     min-height: 300px;
 }
+
 .hero-contenido {
     max-width: 500px;
 }
@@ -956,4 +964,220 @@ html {
         font-size: 29px;
     }
 
+}
+
+/* =====================================
+   SECCIÓN PORTAFOLIO
+===================================== */
+
+.portafolio {
+    padding: 50px 60px;
+    background-color: white;
+}
+
+.portafolio h2 {
+    color: var(--gris-oscuro);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.portafolio-subtitulo {
+    color: var(--gris-oscuro);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.portafolio-tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+    background-color: var(--celeste-claro);
+    border-radius: 18px;
+}
+
+.portafolio-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portafolio-imagen img {
+    width: 100%;
+    max-width: 350px;
+    height: 260px;
+    object-fit: contain;
+}
+
+.portafolio-contenido h3 {
+    color: var(--azul-principal);
+    font-size: 24px;
+}
+
+.portafolio-contenido p {
+    color: var(--gris-oscuro);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   SECCIÓN NOVEDADES
+===================================== */
+
+.novedades {
+    padding: 50px 60px;
+    background-color: var(--fondo-claro);
+}
+
+.novedades h2 {
+    color: var(--gris-oscuro);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.novedades-subtitulo {
+    color: var(--gris-oscuro);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.lista-novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.novedad {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(31, 41, 55, 0.08);
+}
+
+.novedad img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+}
+
+.novedad:nth-child(3) img {
+    object-fit: contain;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--celeste-claro);
+}
+
+.novedad-contenido {
+    padding: 22px;
+}
+
+.novedad-contenido h3 {
+    color: var(--azul-principal);
+    font-size: 19px;
+}
+
+.novedad-contenido p {
+    color: var(--gris-oscuro);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   DESPLAZAMIENTO
+===================================== */
+
+#portafolio,
+#novedades {
+    scroll-margin-top: 90px;
+}
+
+
+/* =====================================
+   DISEÑO RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 850px) {
+
+    .portafolio,
+    .novedades {
+        padding: 35px 25px;
+    }
+
+    .portafolio-tarjeta {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .lista-novedades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .portafolio,
+    .novedades {
+        padding: 30px 18px;
+    }
+
+    .portafolio h2,
+    .novedades h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .portafolio-subtitulo,
+    .novedades-subtitulo {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .portafolio-tarjeta {
+        padding: 22px;
+    }
+
+    .lista-novedades {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.novedad,
+.beneficio,
+.paso,
+.nosotros-tarjeta,
+.testimonio,
+.portafolio-tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.novedad:hover,
+.beneficio:hover,
+.paso:hover,
+.nosotros-tarjeta:hover,
+.testimonio:hover,
+.portafolio-tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+header {
+    padding: 12px 50px;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.96);
+    border-bottom: 1px solid #E5EDF5;
 }
