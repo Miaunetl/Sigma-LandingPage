@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SIGMA - Comunicación inclusiva</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -21,6 +21,8 @@
                 <a href="#funcionamiento">¿Cómo funciona?</a>
                 <a href="#beneficios">Beneficios</a>
                 <a href="#nosotros">Nosotros</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#novedades">Novedades</a>
             </nav>
             <button type="button" onclick="abrirLogin()">Iniciar sesión</button>
         </header>
@@ -246,6 +248,95 @@
     </div>
 
 </section>
+
+<!-- SECCIÓN PORTAFOLIO -->
+<section id="portafolio" class="portafolio">
+
+    <h2>Nuestro portafolio</h2>
+
+    <p class="portafolio-subtitulo">
+        Conoce nuestro proyecto SIGMA y nuestra propuesta
+        para una comunicación sin barreras.
+    </p>
+
+    <article class="portafolio-tarjeta">
+
+        <div class="portafolio-imagen">
+            <img src="images/celular-sigma.png"
+                 alt="Aplicación SIGMA">
+        </div>
+
+        <div class="portafolio-contenido">
+            <h3>SIGMA - Comunicación sin barreras</h3>
+
+            <p>
+                SIGMA es una propuesta tecnológica que busca
+                facilitar la comunicación entre personas con
+                discapacidad auditiva y personas que no conocen
+                la lengua de señas.
+            </p>
+        </div>
+
+    </article>
+
+</section>
+
+
+<!-- SECCIÓN NOVEDADES -->
+<section id="novedades" class="novedades">
+
+    <h2>Nuestras novedades</h2>
+
+    <p class="novedades-subtitulo">
+        Conoce las ideas, avances y compromisos de SIGMA.
+    </p>
+
+    <div class="lista-novedades">
+
+        <article class="novedad">
+            <img src="images/celular-sigma.png"
+                 alt="Aplicación SIGMA">
+
+            <div class="novedad-contenido">
+                <h3>Avances de SIGMA</h3>
+                <p>
+                    Seguimos desarrollando una propuesta
+                    que facilite la comunicación entre
+                    personas sordas y oyentes.
+                </p>
+            </div>
+        </article>
+
+        <article class="novedad">
+            <img src="images/manos-sigma.png"
+                 alt="Lengua de señas">
+
+            <div class="novedad-contenido">
+                <h3>Diseño inclusivo</h3>
+                <p>
+                    Buscamos ofrecer una experiencia
+                    sencilla, clara y accesible para todos.
+                </p>
+            </div>
+        </article>
+
+        <article class="novedad">
+            <img src="images/logo-sigma.png"
+                 alt="Logo SIGMA">
+
+            <div class="novedad-contenido">
+                <h3>Nuestro compromiso</h3>
+                <p>
+                    Utilizamos la tecnología para reducir
+                    las barreras de comunicación.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
         </main>
         <!-- PIE DE PÁGINA -->
         <footer class="footer">
@@ -431,10 +522,6 @@
                     "No se ha enviado ningún correo real."
                 );
             });
-            // =====================================
-// FORMULARIO DE CONTACTO SIGMA
-// =====================================
-
 const formularioContactoSigma = document.getElementById("form-contacto");
 
 if (formularioContactoSigma) {
@@ -451,7 +538,9 @@ if (formularioContactoSigma) {
         this.reset();
 
     });
+
 }
         </script>
+        <script src="js/index.js"></script>
     </body>
 </html>
