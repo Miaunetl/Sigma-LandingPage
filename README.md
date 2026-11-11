@@ -30,18 +30,23 @@ SIGMA está dirigido a:
 ## Principales Características
 
 ### Comunicación Inclusiva
+
 Busca facilitar la interacción entre personas con discapacidad auditiva y personas que no conocen la lengua de señas.
 
 ### Interfaz Accesible
+
 Presenta una propuesta de interfaz sencilla, intuitiva y orientada a mejorar la experiencia de los usuarios.
 
 ### Presentación de la Solución
+
 La Landing Page permite conocer el propósito de SIGMA, su funcionamiento propuesto y sus beneficios.
 
 ### Navegación por Secciones
+
 Permite explorar las secciones de Inicio, ¿Cómo funciona?, Beneficios, Nosotros, Portafolio y Novedades.
 
 ### Diseño Visual
+
 Utiliza una identidad visual basada en los colores azul y turquesa, imágenes representativas y una organización clara de la información.
 
 ## Tecnologías Utilizadas
@@ -53,6 +58,7 @@ Utiliza una identidad visual basada en los colores azul y turquesa, imágenes re
 - Git
 - GitHub
 - GitHub Pages
+- GitHub Actions
 - Google Fonts
 - Lucide Icons
 
@@ -61,11 +67,24 @@ Utiliza una identidad visual basada en los colores azul y turquesa, imágenes re
 ```text
 Sigma-LandingPage-GitHub/
 │
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+│
+├── .gitignore
 ├── README.md
 │
 └── public/
     ├── index.html
     ├── favicon.ico
+    │
+    ├── favicon_io/
+    │   ├── android-chrome-192x192.png
+    │   ├── android-chrome-512x512.png
+    │   ├── apple-touch-icon.png
+    │   ├── favicon-16x16.png
+    │   ├── favicon-32x32.png
+    │   └── site.webmanifest
     │
     └── assets/
         ├── styles/
@@ -85,7 +104,17 @@ Sigma-LandingPage-GitHub/
 
 La Landing Page de SIGMA se encuentra publicada mediante GitHub Pages.
 
-https://miaunetl.github.io/Sigma-LandingPage/
+**Enlace de acceso:**
+
+https://sigma-ihc.github.io/Sigma-LandingPage/
+
+## Control de Versiones y Despliegue
+
+El proyecto utiliza Git y GitHub para el control de versiones y la gestión colaborativa del desarrollo.
+
+Se implementó una organización de ramas basada en GitFlow, utilizando las ramas principales `main` y `develop`, además de ramas `feature` para desarrollar nuevas funcionalidades y mejoras.
+
+Asimismo, se configuró GitHub Actions mediante el archivo `deploy.yml`, permitiendo automatizar la publicación del contenido de la carpeta `public` en GitHub Pages cuando se actualiza la rama `main`.
 
 ## Estado del Proyecto
 
